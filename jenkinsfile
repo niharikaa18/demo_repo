@@ -12,7 +12,7 @@ pipeline {
         echo 'cloning...'
         bat "echo %WORKSPACE%"
         bat "git clone git@github.com:niharikaa18/demo_repo.git"
-        bat "python get.py
+        bat "python get.py"
       }
     }
 
