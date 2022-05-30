@@ -1,0 +1,21 @@
+pipeline {
+  agent {
+    label {
+      label "test_niharika"
+    }
+  }
+
+  stages {
+    stage('clone') {
+      steps {
+
+        echo 'cloning...'
+        bat "echo %WORKSPACE%"
+        bat "git clone git@github.com:niharikaa18/demo_repo.git"
+        bat "python get.py
+      }
+    }
+
+  }
+
+}
